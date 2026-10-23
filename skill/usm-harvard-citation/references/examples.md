@@ -33,13 +33,13 @@ Fletcher, R., Fletcher, S. & Wagner, E. (1998). Clinical epidemiology, the essen
 Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosmawati, N. H., Mohd Ismail, I. & Rohana, A. J. (Eds.), Statistics Made Easy. Basic Statistical Steps in Medical & Health Research. Kota Bharu: Department of Community Medicine, pp. 95-116.
 
 **Webpage (slide example)**
-Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W. (2004). Critical Appraisal of the Health Research Literature Prevalence or Incidence of a Health Problem. Retrieved from http://www.phac-aspc.gc.ca/ [Accessed 17 March 2009].
+Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W. (2004). Critical Appraisal of the Health Research Literature Prevalence or Incidence of a Health Problem. Retrieved from: http://www.phac-aspc.gc.ca/ [Accessed 17 March 2009].
 
 **Thesis (fictitious)**
 Ahmad, S. (2019). Factors influencing vaccination uptake among caregivers in Kelantan (Dissertation). Universiti Sains Malaysia, Kubang Kerian.
 
 **Thesis found online (from user's test case)**
-Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
+Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
 
 **Journal article with missing pages (from user's test case)**
 Abdullah, N. D. S., Mahadi, M. R. & Baharudin, M. R. (2023). Development of mobile application in assessing commuting accident risk (CommuRisk) amongst commuters at Klang Valley. Malaysian Journal of Medicine & Health Sciences, 19(3), <span style="color:red">**[MISSING: pages]**</span>. https://doi.org/10.47836/mjmhs.19.3.14
@@ -58,6 +58,39 @@ Surname, A., Surname, B., ... (list authors 1 to 19), ..., Last Author, Z. (Year
 - Missing a, b, c for same author, same year.
 - Using `(Ed.)` for two editors: use `(Eds.)`.
 - Not italicising journal names in Word.
+
+## Examples from a USM MPH report (EndNote Harvard-USM output, corrected)
+
+These come from the reference list of a USM MPH research report (GKT517, 2024) that used the Harvard-USM EndNote style. Each shows the original EndNote output and the version this skill returns.
+
+**Article number in place of pages**
+Original: `... Sustainability, 14(18), 11543. doi: https://doi.org/10.3390/su141811543`
+Skill: `Alrumaidhi, M. & Rakha, H. A. (2022). Factors affecting crash severity among elderly drivers: A multilevel ordinal logistic regression approach. Sustainability, 14(18), 11543. https://doi.org/10.3390/su141811543`
+
+**Volume only, with article number**
+Skill: `Čábelková, I., Gardanova, Z., Neimatov, E. & Esaulov, V. (2021). Spatial accessibility assessment to healthcare facilities: Urban and rural areas. E3S Web of Conferences, 301, 02004. https://doi.org/10.1051/e3sconf/202130102004`
+
+**Organisation as author, webpage**
+Original: `DOSM. (2023). Current population estimates, Malaysia 2023. Retrieved from:https://www.dosm.gov.my/... [Accessed 11 March 2024].`
+Skill: `DOSM. (2023). Current population estimates, Malaysia 2023. Retrieved from: https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-malaysia----2023 [Accessed 11 March 2024].`
+
+**`http://` DOI converted to `https://`**
+Original: `... 17(10), 3676. doi: http://doi.org/10.3390/ijerph17103676`
+Skill: `Dietz, P., Reichel, J. L., Werner, A. M. & Letzel, S. (2020). Study-related work and commuting accidents among students at the University of Mainz from 12/2012 to 12/2018: Identification of potential risk groups and implications for prevention. International Journal of Environmental Research and Public Health, 17(10), 3676. https://doi.org/10.3390/ijerph17103676`
+
+**Wrong author format and missing journal details**
+Original: `Dressner M.A. (2017). Hospital workers: an assessment of occupational injuries and illnesses. Monthly Labor Review. doi: https://doi.org/10.21916/mlr.2017.17`
+Skill: `Dressner, M. A. (2017). Hospital workers: An assessment of occupational injuries and illnesses. Monthly Labor Review, <span style="color:red">**[MISSING: volume(issue)]**</span>, <span style="color:red">**[MISSING: pages]**</span>. https://doi.org/10.21916/mlr.2017.17`
+
+**Article number only in the DOI**
+Original: `... BioMed Research International, 2017. doi: https://doi.org/10.1155/2017/3834827`
+Skill: `Camino López, M. A., Gonzalez Alcantara, O. J. & Fontaneda, I. (2017). Gender differences in commuting injuries in Spain and their impact on injury prevention. BioMed Research International, 2017, <span style="color:red">**[MISSING: article number]**</span>. https://doi.org/10.1155/2017/3834827`
+
+**Other problems to flag when checking a real list**
+- Two references joined in one paragraph (for example a DOI followed directly by the next author's name).
+- Spaces inside a DOI or URL, such as `s40520-021- 01817-y`. Remove them.
+- A full stop after the DOI.
+- An author name that looks wrongly split, such as `DP, N.`. Mark it `[CHECK: author name]`.
 
 ## Test results (manual check, not run inside Claude)
 
@@ -86,3 +119,23 @@ Five PubMed articles given in Vancouver style and converted by the skill in a he
 | 5 | James et al., 2020 (Inj Prev) | 90 authors, supplement issue | First 19, `...`, last author. `26(Suppl. 1), i46-i56`. Correct. |
 
 Three rules were added after the first run: article numbers in place of pages, supplement issues as `Suppl. N`, and journals with no issue numbers.
+
+## Test results: checking a real USM MPH reference list (run in Claude Code)
+
+Ten entries taken as-is from the EndNote output of a USM MPH report, including real errors. The skill was asked to check and correct them.
+
+| Problem in the original | Caught? |
+|---|---|
+| Full stop after DOI (Abdullah) | Yes |
+| Space inside DOI (Barnsley, Cyr) | Yes |
+| Article number only in DOI (Camino López, Cronn) | Yes, marked missing, not taken from DOI |
+| `Proceedings from Proceedings of` (Chakraborty) | Yes, repeat removed, pages and publisher marked missing |
+| Two references joined in one paragraph (Cyr and Dawson) | Yes, split into two entries |
+| `http://` DOI (Dietz) | Yes |
+| `Retrieved from:https` with no space (DOSH) | Yes |
+| Wrongly split author name `DP, N.` | Yes, marked `[CHECK]` |
+| `Dressner M.A.` author format, missing volume and pages | Yes |
+| `Sex- related` broken hyphen (Cronn) | Yes |
+| Alphabetical order (Cronn before Cyr) | Yes |
+
+One false alarm: `DOSH` was flagged for using an abbreviation. A rule was added: organisation abbreviations are acceptable.

@@ -83,7 +83,15 @@ Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosm
 
 ### Conference paper or proceedings
 ```
-Surname, A. B. (Year). Paper title. In: Conference name (pp. xx-xx). Place: Publisher.
+Surname, A. B. (Year). Paper title. Proceedings from Conference name, pp. xx-xx. Place: Publisher.
+```
+- This follows the Harvard-USM EndNote output (`Proceedings from ...`).
+- If the conference name already starts with "Proceedings of", do not repeat the word. Write `Proceedings from the Fifth International Conference...`, not `Proceedings from Proceedings of the Fifth International Conference...`.
+- If pages or publisher are missing, mark them in red.
+
+Example (from a USM MPH report, corrected):
+```
+Chakraborty, A., Mitra, S. & Maitra, B. (2022). A comprehensive review of motorcyclists' riding behaviour and safety. Proceedings from the Fifth International Conference of Transportation Research Group of India, <span style="color:red">**[MISSING: pages]**</span>. Singapore: <span style="color:red">**[MISSING: publisher]**</span>.
 ```
 
 ---
@@ -108,15 +116,15 @@ Surname, A. B. (Year). Title of dissertation (Unpublished work). Institution nam
 
 ### Thesis found online
 ```
-Surname, A. B. (Year). Title of thesis (Dissertation). Institution name. Retrieved from URL [Accessed dd Month yyyy].
+Surname, A. B. (Year). Title of thesis (Dissertation). Institution name. Retrieved from: URL [Accessed dd Month yyyy].
 ```
 - The institution can be read from the URL. For example, `uum.edu.my` is Universiti Utara Malaysia. Mark it as `[CHECK]` in red, because it is inferred.
 - The degree (Master's or PhD) is not in the URL. Write `(Dissertation)` and mark the degree in red as `[MISSING: degree type]`.
-- Write `Retrieved from URL` with a space after the colon, even if the source does not have one.
+- Write `Retrieved from: URL` with one space after the colon. EndNote often outputs `Retrieved from:https://...` with no space. Add the space.
 
 Example (from user's test case):
 ```
-Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
+Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
 ```
 
 ---
@@ -143,11 +151,11 @@ Surname, A. B. (Year). Program name (Version x.x) [Computer software]. Publisher
 
 ### Webpage or electronic source
 ```
-Organisation or Author. (Year). Page title. Retrieved from URL [Accessed dd Month yyyy].
+Organisation or Author. (Year). Page title. Retrieved from: URL [Accessed dd Month yyyy].
 ```
 Example:
 ```
-Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W. (2004). Critical Appraisal of the Health Research Literature Prevalence or Incidence of a Health Problem. Retrieved from http://www.phac-aspc.gc.ca/ [Accessed 17 March 2009].
+Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W. (2004). Critical Appraisal of the Health Research Literature Prevalence or Incidence of a Health Problem. Retrieved from: http://www.phac-aspc.gc.ca/ [Accessed 17 March 2009].
 ```
 Note: the slide uses Title Case for this webpage title. The sentence-case rule applies to articles and books, not webpages.
 

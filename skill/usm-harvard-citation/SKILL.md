@@ -98,6 +98,9 @@ Use the output format below. Do not skip the checklist of missing or uncertain f
 - **Article numbers:** many online journals (for example BMC, Sports Medicine - Open) use an article number instead of pages. Write the article number in place of the page range, as in the slide example `Int Breastfeed J, 7(1), 11`. Do not mark it as missing.
 - **Supplement issues:** write `Volume(Suppl. N)`, for example `26(Suppl. 1), i46-i56`. Convert `Supp 1`, `Suppl 1` or `S1` to `Suppl. 1`.
 - **No issue number:** some journals publish by volume only (for example Accident Analysis & Prevention). If the source gives a volume and pages but no issue, write the volume only, for example `128, 159-163`, and do not mark it. Mark `[CHECK: issue]` only when the journal normally has issues, for example when other articles from the same journal show one.
+- **Web sources:** `Retrieved from: URL [Accessed dd Month yyyy].` with one space after the colon. This follows the Harvard-USM EndNote output. The lecture slides show `Retrieved from URL` without a colon. Use the colon form.
+- **Conference papers:** `Proceedings from Conference name`. Do not repeat "Proceedings".
+- **Organisation abbreviations** such as `WHO`, `DOSH` or `DOSM` are acceptable as the author, as in the slide example `(WHO, 2013)`. Do not flag them. Use the same form in the text and the reference list.
 - **Same markers everywhere:** if an entry has a `[MISSING]` or `[CHECK]` marker, keep the same marker in the final sorted list. Do not drop or change it.
 - Journal names as they appear in the source, for example `Med J Malaysia`. Do not change their case.
 - Article and book titles in sentence case.
