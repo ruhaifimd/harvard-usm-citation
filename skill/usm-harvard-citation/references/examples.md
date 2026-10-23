@@ -58,3 +58,17 @@ Surname, A., Surname, B., ... (list authors 1 to 19), ..., Last Author, Z. (Year
 - Missing a, b, c for same author, same year.
 - Using `(Ed.)` for two editors: use `(Eds.)`.
 - Not italicising journal names in Word.
+
+## Test results (manual check, not run inside Claude)
+
+Five references checked by reading them against SKILL.md and usm-formatting-rules.md. The skill itself was not run in the Claude app.
+
+| # | Source | In text | Result |
+|---|---|---|---|
+| 1 | Ab Hamid et al., 2018 (9 authors) | (Ab Hamid et al., 2018) | Missing issue and DOI/URL (red). Page `90` may be an article number (check). |
+| 2 | Abdullah et al., 2023 | (Abdullah et al., 2023) | Missing pages (red). DOI in `https://doi.org/` form. |
+| 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Complete. |
+| 4 | Adenan, 2018 (online thesis) | (Adenan, 2018) | Missing degree type (red). Institution inferred from URL (check, red). |
+| 5 | Ali et al., 2016 (4 authors) | (Ali et al., 2016) | Missing DOI/URL (red). Title `Roads traffic accidents` may need correction (check, red). |
+
+Alphabetical order: Ab Hamid, Abdullah, Adams, Adenan, Ali. Correct.
