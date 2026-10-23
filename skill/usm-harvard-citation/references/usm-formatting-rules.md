@@ -116,15 +116,16 @@ Surname, A. B. (Year). Title of dissertation (Unpublished work). Institution nam
 
 ### Thesis found online
 ```
-Surname, A. B. (Year). Title of thesis (Dissertation). Institution name. Retrieved from: URL [Accessed dd Month yyyy].
+Surname, A. B. (Year). Title of thesis. Retrieved from: URL [Accessed dd Month yyyy].
 ```
-- The institution can be read from the URL. For example, `uum.edu.my` is Universiti Utara Malaysia. Mark it as `[CHECK]` in red, because it is inferred.
-- The degree (Master's or PhD) is not in the URL. Write `(Dissertation)` and mark the degree in red as `[MISSING: degree type]`.
+- This follows the Harvard-USM EndNote output: a thesis read online is formatted like a webpage.
+- Do not add `(Dissertation)`, the degree type, or the institution. Do not mark them as missing.
 - Write `Retrieved from: URL` with one space after the colon. EndNote often outputs `Retrieved from:https://...` with no space. Add the space.
+- The access date is required. If it is missing, mark it in red as `[MISSING: access date]`.
 
 Example (from user's test case):
 ```
-Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
+Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
 ```
 
 ---

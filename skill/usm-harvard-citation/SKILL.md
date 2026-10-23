@@ -148,7 +148,7 @@ Missing or uncertain: [list each one, or "None"]
 ## Important Reminders
 
 - **Never fabricate.** Do not invent any part of a reference: authors, title, year, DOI, pages, publisher, or degree type. If information is missing, mark it in red.
-- **Do not guess the institution or degree from a URL without saying so.** Mark the guess as `[CHECK]`.
+- **Online theses follow the EndNote output:** format them like a webpage, with no `(Dissertation)`, degree, or institution. For print theses, do not guess the institution. Mark any guess as `[CHECK]`.
 - **Explain your corrections** briefly, so the author learns the rule, not only the fixed version.
 - **If the IPS guideline and this skill disagree**, follow the IPS guideline and say so.
 

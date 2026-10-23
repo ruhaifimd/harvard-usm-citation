@@ -39,7 +39,7 @@ Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W.
 Ahmad, S. (2019). Factors influencing vaccination uptake among caregivers in Kelantan (Dissertation). Universiti Sains Malaysia, Kubang Kerian.
 
 **Thesis found online (from user's test case)**
-Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital (<span style="color:red">**[MISSING: degree type]**</span>). Universiti Utara Malaysia. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
+Adenan, A. F. (2018). The relationship between fatigue factors, job factors and environmental factors towards commuting accidents among nurses in hospital. Retrieved from: https://etd.uum.edu.my/id/eprint/8257 [Accessed 17 February 2024].
 
 **Journal article with missing pages (from user's test case)**
 Abdullah, N. D. S., Mahadi, M. R. & Baharudin, M. R. (2023). Development of mobile application in assessing commuting accident risk (CommuRisk) amongst commuters at Klang Valley. Malaysian Journal of Medicine & Health Sciences, 19(3), <span style="color:red">**[MISSING: pages]**</span>. https://doi.org/10.47836/mjmhs.19.3.14
@@ -101,7 +101,7 @@ Five references checked by reading them against SKILL.md and usm-formatting-rule
 | 1 | Ab Hamid et al., 2018 (9 authors) | (Ab Hamid et al., 2018) | Missing issue and DOI/URL (red). Page `90` may be an article number (check). |
 | 2 | Abdullah et al., 2023 | (Abdullah et al., 2023) | Missing pages (red). DOI in `https://doi.org/` form. |
 | 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Complete. `61` is an article number and is written in place of pages, as in the slide example. |
-| 4 | Adenan, 2018 (online thesis) | (Adenan, 2018) | Missing degree type (red). Institution inferred from URL (check, red). |
+| 4 | Adenan, 2018 (online thesis) | (Adenan, 2018) | At the time of this test: missing degree type and inferred institution (red). The rule was later changed to follow EndNote: online theses are formatted like webpages, with no degree or institution. |
 | 5 | Ali et al., 2016 (4 authors) | (Ali et al., 2016) | Missing DOI/URL (red). Title `Roads traffic accidents` may need correction (check, red). |
 
 Alphabetical order: Ab Hamid, Abdullah, Adams, Adenan, Ali. Correct.
