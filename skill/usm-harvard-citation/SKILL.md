@@ -95,6 +95,10 @@ Use the output format below. Do not skip the checklist of missing or uncertain f
 - Authors: `Surname, Initials.`, separated by commas, with `&` before the last author.
 - Year in round brackets after the authors.
 - Journal volume and issue with no space: `62(3)`, not `62 (3)`.
+- **Article numbers:** many online journals (for example BMC, Sports Medicine - Open) use an article number instead of pages. Write the article number in place of the page range, as in the slide example `Int Breastfeed J, 7(1), 11`. Do not mark it as missing.
+- **Supplement issues:** write `Volume(Suppl. N)`, for example `26(Suppl. 1), i46-i56`. Convert `Supp 1`, `Suppl 1` or `S1` to `Suppl. 1`.
+- **No issue number:** some journals publish by volume only (for example Accident Analysis & Prevention). If the source gives a volume and pages but no issue, write the volume only, for example `128, 159-163`, and do not mark it. Mark `[CHECK: issue]` only when the journal normally has issues, for example when other articles from the same journal show one.
+- **Same markers everywhere:** if an entry has a `[MISSING]` or `[CHECK]` marker, keep the same marker in the final sorted list. Do not drop or change it.
 - Journal names as they appear in the source, for example `Med J Malaysia`. Do not change their case.
 - Article and book titles in sentence case.
 - DOI always as a clickable link: `https://doi.org/10.xxxx/xxxxx`. Do not write the `doi:` prefix. If the source gives `doi: https://doi.org/...`, convert it to `https://doi.org/...`.

@@ -67,8 +67,22 @@ Five references checked by reading them against SKILL.md and usm-formatting-rule
 |---|---|---|---|
 | 1 | Ab Hamid et al., 2018 (9 authors) | (Ab Hamid et al., 2018) | Missing issue and DOI/URL (red). Page `90` may be an article number (check). |
 | 2 | Abdullah et al., 2023 | (Abdullah et al., 2023) | Missing pages (red). DOI in `https://doi.org/` form. |
-| 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Pages missing (red). `61` is an article number, not a page range. Corrected after the headless Claude Code test. |
+| 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Complete. `61` is an article number and is written in place of pages, as in the slide example. |
 | 4 | Adenan, 2018 (online thesis) | (Adenan, 2018) | Missing degree type (red). Institution inferred from URL (check, red). |
 | 5 | Ali et al., 2016 (4 authors) | (Ali et al., 2016) | Missing DOI/URL (red). Title `Roads traffic accidents` may need correction (check, red). |
 
 Alphabetical order: Ab Hamid, Abdullah, Adams, Adenan, Ali. Correct.
+
+## Test results: international journals (run in Claude Code)
+
+Five PubMed articles given in Vancouver style and converted by the skill in a headless Claude Code run. Metadata checked against PubMed.
+
+| # | Source | Case tested | Result |
+|---|---|---|---|
+| 1 | Mohan, 2019 (Accid Anal Prev) | 1 author, journal with no issue numbers | `128, 159-163`, not marked. Correct. |
+| 2 | Borges & Orozco, 2023 (Inj Prev) | 2 authors | `Borges, G. & Orozco, R.` Correct. |
+| 3 | Jamali-Dolatabad et al., 2021 (BMC Public Health) | Article number | `21(1), 1149`, not marked. Correct. |
+| 4 | Gutierrez et al., 2022 (Inj Prev) | 13 authors | All 13 listed. Correct. |
+| 5 | James et al., 2020 (Inj Prev) | 90 authors, supplement issue | First 19, `...`, last author. `26(Suppl. 1), i46-i56`. Correct. |
+
+Three rules were added after the first run: article numbers in place of pages, supplement issues as `Suppl. N`, and journals with no issue numbers.

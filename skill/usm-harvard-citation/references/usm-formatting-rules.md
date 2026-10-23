@@ -26,12 +26,30 @@ Example:
 Anita, S., Zahiruddin, W. M., Sa'iah, A., Rahimah, M. A. & Sha'ari, B. N. (2007). HIV/AIDS knowledge, attitudes and risk behaviours among Orang Asli in Peninsular Malaysia. Med J Malaysia, 62(3), 227-233.
 ```
 
+### Article with an article number (no page range)
+Write the article number in place of the pages. Do not mark it as missing.
+```
+Jamali-Dolatabad, M., Sarbakhsh, P. & Sadeghi-Bazargani, H. (2021). Hidden patterns among the fatally injured pedestrians in an Iranian population: Application of categorical principal component analysis (CATPCA). BMC Public Health, 21(1), 1149. https://doi.org/10.1186/s12889-021-11212-x
+```
+
+### Article in a supplement issue
+Write `Volume(Suppl. N)`:
+```
+Inj Prev, 26(Suppl. 1), i46-i56. https://doi.org/10.1136/injuryprev-2019-043302
+```
+
+### Journal with no issue numbers
+If the journal publishes by volume only, write the volume and pages with no issue:
+```
+Mohan, D. (2019). Traffic safety: Rights and obligations. Accid Anal Prev, 128, 159-163. https://doi.org/10.1016/j.aap.2019.04.010
+```
+
 ### Article with missing pages or issue
-Mark the missing field in red:
+If no page range and no article number are given, mark the missing field in red:
 ```
 Abdullah, N. D. S., Mahadi, M. R. & Baharudin, M. R. (2023). Development of mobile application in assessing commuting accident risk (CommuRisk) amongst commuters at Klang Valley. Malaysian Journal of Medicine & Health Sciences, 19(3), <span style="color:red">**[MISSING: pages]**</span>. https://doi.org/10.47836/mjmhs.19.3.14
 ```
-A journal article number (such as `14` in `mjmhs.19.3.14`) is not a page range. Ask the author for the page range.
+Do not take the article number from the DOI (such as `14` in `mjmhs.19.3.14`). Use an article number only when the source states it. Otherwise ask the author for the page range or article number.
 
 ---
 
