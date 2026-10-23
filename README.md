@@ -1,24 +1,59 @@
 # USM Harvard Citation Skill (Harvard-USM Ver 2020)
 
-A Claude skill that formats in-text citations and reference lists in the USM Harvard style, for theses, dissertations and academic writing at Universiti Sains Malaysia.
+A Claude skill for formatting, checking, and correcting in-text citations and reference lists in the USM Harvard style. It is for theses, dissertations, and academic writing at Universiti Sains Malaysia (USM), following the IPS writing guideline.
 
-## What it does
+**Based on:** APA 6th Edition (author-date), with the USM-specific rules from the Harvard-USM Ver 2020 EndNote style.
 
-- Formats in-text citations (1 author, 2 authors, 3+ authors, same author same year, several sources, no author, secondary sources).
-- Formats reference-list entries for journal articles, books, book chapters, conference papers, theses, reports, computer programmes, and websites or online sources.
-- Checks a reference list for missing fields, wrong order, and "Anonymous".
+## What It Does
 
-## Install
+- **Formats in-text citations:** 1 author, 2 authors, 3+ authors (`et al.`), same author same year (a, b, c), several sources, no author, organisation as author, secondary sources, personal communication.
+- **Formats reference-list entries** for journal articles, books, book chapters, conference papers, theses (print and online), reports, computer programmes, webpages, and translated or reprinted works.
+- **Checks and corrects** an existing reference list: order, `&` vs `and`, `et al.` in the list, DOI format, `62(3)` volume format, and `Anonymous`.
+- **Marks missing information in red** (for example `[MISSING: pages]`). It never invents a DOI, page number, publisher, or degree type.
 
-Copy the folder `skill/usm-harvard-citation` into your Claude skills folder (for Claude Code: `~/.claude/skills/`), then start a new session.
+## Supported Source Types
 
-## Example
+Journal articles (with and without DOI) · Books · Book chapters (edited books) · Conference papers and proceedings · Theses and dissertations (print, online, unpublished) · Reports · Computer programmes · Webpages and electronic sources · Translated works · Reprinted works · Personal communication · Secondary sources
+
+## Installation
+
+1. Download or clone this repo.
+2. Copy the folder `skill/usm-harvard-citation` into your Claude skills folder:
+   - **Claude Code:** `~/.claude/skills/usm-harvard-citation/`
+   - **Other Claude apps:** upload the `usm-harvard-citation` folder through the skills settings, if your app supports custom skills.
+3. Start a new session.
+
+## How to Use
+
+Ask Claude in plain language. For example:
+
+- "Format this in USM Harvard: Smith J, Ali B. 2013. Vaccine uptake in Kelantan. Med J Malaysia 68(2):45-50"
+- "Check this reference list for USM Harvard: ..."
+- "Cite this URL in USM Harvard: https://..."
+- "Convert this APA reference to USM Harvard: ..."
+- "Sort my reference list and show me what changed."
+
+## Example (fictitious)
 
 Input: `Smith J, Ali B. 2013. Vaccine uptake in Kelantan. Med J Malaysia 68(2):45-50`
 
-Output in-text: `(Smith & Ali, 2013)`
+In-text citation: `(Smith & Ali, 2013)`
 
-Output reference: `Smith, J. & Ali, B. (2013). Vaccine uptake in Kelantan. Med J Malaysia, 68(2), 45-50.`
+Reference list entry: `Smith, J. & Ali, B. (2013). Vaccine uptake in Kelantan. Med J Malaysia, 68(2), 45-50.`
+
+## File Structure
+
+```
+harvard-usm-citation/
+├── README.md
+├── LICENSE
+└── skill/
+    └── usm-harvard-citation/
+        ├── SKILL.md                              # Main skill instructions
+        └── references/
+            ├── usm-formatting-rules.md           # Templates and rules for each source type
+            └── examples.md                       # Worked examples, including missing-field cases
+```
 
 ## Sources
 
@@ -27,7 +62,7 @@ Output reference: `Smith, J. & Ali, B. (2013). Vaccine uptake in Kelantan. Med J
 - Manual for Harvard USM Version 2020 (pustaka.kk.usm.my).
 - IPS USM, *A Guide to the Preparation, Submission and Examination of Thesis* (writing style, pages 8-10).
 
-The style file itself is not included in this repo. To use it in EndNote, get it from the USM library or from the authors.
+The EndNote style file itself is not included in this repo. To use it in EndNote, get it from the USM library or from the authors.
 
 ## Limits
 
@@ -41,4 +76,4 @@ MIT. See [LICENSE](LICENSE). The style rules belong to the authors named above, 
 
 ## Feedback
 
-Please report errors or missing types by opening an issue.
+Please report errors or missing source types by opening an issue.
