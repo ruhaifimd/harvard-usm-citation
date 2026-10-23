@@ -2,8 +2,6 @@
 
 A Claude skill that formats in-text citations and reference lists in the USM Harvard style, for theses, dissertations and academic writing at Universiti Sains Malaysia.
 
-> **Status:** draft. Not yet tested on real references.
-
 ## What it does
 
 - Formats in-text citations (1 author, 2 authors, 3+ authors, same author same year, several sources, no author, secondary sources).
