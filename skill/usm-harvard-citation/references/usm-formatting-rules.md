@@ -68,13 +68,17 @@ Fletcher, R., Fletcher, S. & Wagner, E. (1998). Clinical epidemiology, the essen
 
 ### Book chapter (edited book)
 ```
-Surname, A. B. (Year). Chapter title. In: Editor Surname, A. B. (Ed.), Book title (pp. xx-xx). Place: Publisher.
+Surname, A. B. (Year). Chapter title. In: Editor Surname, A. B. (Ed.), Book title. Place: Publisher, pp. xx-xx.
 ```
-Use `(Eds.)` for two or more editors. In the example below the editors are listed as one group, as shown in the slides.
+- This follows the slide example and the Harvard-USM EndNote output: pages come last, after the publisher.
+- Use `(Ed.)` for one editor and `(Eds.)` for two or more. EndNote prints `(eds.)` in lower case. Change it to `(Eds.)`, as in the slides.
+- Separate editors with commas and `and` before the last editor (not `&`), as in the slides.
+- Write `pp.` with a full stop. EndNote prints `pp` without one.
+- Book title in italics.
 
 Example:
 ```
-Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosmawati, N. H., Mohd Ismail, I. & Rohana, A. J. (Eds.), Statistics Made Easy. Basic Statistical Steps in Medical & Health Research. Kota Bharu: Department of Community Medicine, pp. 95-116.
+Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosmawati, N. H., Mohd Ismail, I. and Rohana, A. J. (Eds.), Statistics Made Easy. Basic Statistical Steps in Medical & Health Research. Kota Bharu: Department of Community Medicine, pp. 95-116.
 ```
 
 ---

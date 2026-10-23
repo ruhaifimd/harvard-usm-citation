@@ -30,7 +30,7 @@ Ismail, T. A., Sulaiman, Z., Jalil, R., Muda, W. M. & Man, N. N. (2012). Breast 
 Fletcher, R., Fletcher, S. & Wagner, E. (1998). Clinical epidemiology, the essentials (2nd ed.). Baltimore, USA: Williams and Wilkins.
 
 **Book chapter (slide example)**
-Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosmawati, N. H., Mohd Ismail, I. & Rohana, A. J. (Eds.), Statistics Made Easy. Basic Statistical Steps in Medical & Health Research. Kota Bharu: Department of Community Medicine, pp. 95-116.
+Norsa'adah, B. & Nik Rosmawati, N. H. (2011). Non-parametric tests. In: Nik Rosmawati, N. H., Mohd Ismail, I. and Rohana, A. J. (Eds.), Statistics Made Easy. Basic Statistical Steps in Medical & Health Research. Kota Bharu: Department of Community Medicine, pp. 95-116.
 
 **Webpage (slide example)**
 Loney, P. L., Chambers, L. W., Bennett, K. J., Roberts, J. G. & Stratford, P. W. (2004). Critical Appraisal of the Health Research Literature Prevalence or Incidence of a Health Problem. Retrieved from: http://www.phac-aspc.gc.ca/ [Accessed 17 March 2009].
@@ -88,8 +88,8 @@ Original: `... BioMed Research International, 2017. doi: https://doi.org/10.1155
 Skill: `Camino López, M. A., Gonzalez Alcantara, O. J. & Fontaneda, I. (2017). Gender differences in commuting injuries in Spain and their impact on injury prevention. BioMed Research International, 2017, <span style="color:red">**[MISSING: article number]**</span>. https://doi.org/10.1155/2017/3834827`
 
 **Other problems to flag when checking a real list**
-- Two references joined in one paragraph (for example a DOI followed directly by the next author's name).
-- Spaces inside a DOI or URL, such as `s40520-021- 01817-y`. Remove them.
+- Two references joined in one paragraph (for example a DOI followed directly by the next author's name). This often happens when references are copied from a PDF.
+- Spaces inside a DOI or URL, such as `s40520-021- 01817-y`. Remove them. These usually come from line breaks when text is copied from a PDF.
 - A full stop after the DOI.
 - An author name that looks wrongly split, such as `DP, N.`. Mark it `[CHECK: author name]`.
 
@@ -123,20 +123,33 @@ Three rules were added after the first run: article numbers in place of pages, s
 
 ## Test results: checking a real USM MPH reference list (run in Claude Code)
 
-Ten entries taken as-is from the EndNote output of a USM MPH report, including real errors. The skill was asked to check and correct them.
+Ten entries copied from a text extract of a USM MPH report's EndNote reference list. The skill was asked to check and correct them.
+
+Note: three problems below (spaces inside DOIs, two references joined, and `Sex- related`) came from extracting text out of the PDF, not from the report itself. They are common when references are copied from a PDF, so they still test the skill, but the original report did not have them.
 
 | Problem in the original | Caught? |
 |---|---|
 | Full stop after DOI (Abdullah) | Yes |
-| Space inside DOI (Barnsley, Cyr) | Yes |
+| Space inside DOI (Barnsley, Cyr), from PDF text extraction | Yes |
 | Article number only in DOI (Camino López, Cronn) | Yes, marked missing, not taken from DOI |
 | `Proceedings from Proceedings of` (Chakraborty) | Yes, repeat removed, pages and publisher marked missing |
-| Two references joined in one paragraph (Cyr and Dawson) | Yes, split into two entries |
+| Two references joined in one paragraph (Cyr and Dawson), from PDF text extraction | Yes, split into two entries |
 | `http://` DOI (Dietz) | Yes |
 | `Retrieved from:https` with no space (DOSH) | Yes |
 | Wrongly split author name `DP, N.` | Yes, marked `[CHECK]` |
 | `Dressner M.A.` author format, missing volume and pages | Yes |
-| `Sex- related` broken hyphen (Cronn) | Yes |
+| `Sex- related` broken hyphen (Cronn), from PDF text extraction | Yes |
 | Alphabetical order (Cronn before Cyr) | Yes |
 
 One false alarm: `DOSH` was flagged for using an abbreviation. A rule was added: organisation abbreviations are acceptable.
+
+## Test results: font styles and book chapters (run in Claude Code)
+
+Font styles were checked against the fonts in the PDF of a USM MPH report made with the Harvard-USM EndNote style: journal name in italics, volume and issue in bold (for example **36(1)**, **33**), pages in plain text.
+
+| Entry | Result |
+|---|---|
+| Fadzil & Bulgiba (2024) | *Asia Pacific Journal of Public Health*, **36(1)**, 119-122. Correct. |
+| Fisk (2016) | *Advances in Group Processes*, **33**, 179-210. Correct. |
+| Guénel & Léger (2023), book chapter | `(eds.)` changed to `(Eds.)`, `pp` to `pp.`, pages after the publisher, book title in italics. Correct. |
+| Hosmer Jr et al. (2013), book | Book title in italics, edition marked `[CHECK]`, place marked `[MISSING]`. Correct. |
