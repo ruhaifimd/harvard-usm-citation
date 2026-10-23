@@ -52,7 +52,7 @@ The same model was given the same references with and without the skill, and the
 
 Without the skill, Claude writes general UK Harvard instead of Harvard-USM. The skill adds the USM rules it does not know: bold volume and issue, `&` between authors, `Retrieved from:`, `(Eds.)`, `Proceedings from`, online theses, and 21+ authors. The one failure on the held-out set was a false alarm, a missing issue marked for a BMC journal. Model: Claude Opus 5.5, October 2026.
 
-Method, limits, every check, and the raw outputs are in [BENCHMARK.md](BENCHMARK.md). To re-run it, see the [`benchmark/`](benchmark) folder.
+Method, limits and every check are in [BENCHMARK.md](BENCHMARK.md).
 
 ## File Structure
 
@@ -61,11 +61,6 @@ harvard-usm-citation/
 ├── README.md
 ├── BENCHMARK.md                                  # Benchmark method and results
 ├── LICENSE
-├── benchmark/
-│   ├── prompt.txt, input-main.txt, input-holdout.txt   # Test inputs
-│   ├── sets/main.js, sets/holdout.js             # Scoring rules for each check
-│   ├── run.sh, score.js, summary.js              # Run, score and summarise
-│   └── results/                                  # Raw outputs of every run and scores
 └── skill/
     └── usm-harvard-citation/
         ├── SKILL.md                              # Main skill instructions
@@ -74,7 +69,7 @@ harvard-usm-citation/
             └── examples.md                       # Worked examples, including missing-field cases
 ```
 
-Only the `skill/usm-harvard-citation` folder needs to be installed. The `benchmark` folder is for testing.
+Only the `skill/usm-harvard-citation` folder needs to be installed.
 
 ## Sources
 

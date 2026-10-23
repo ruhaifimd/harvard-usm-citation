@@ -1,6 +1,6 @@
 # Benchmark: USM Harvard Citation Skill
 
-This benchmark measures how well Claude follows the Harvard-USM Ver 2020 style **with** the skill and **without** it. The model, prompt and references are the same in both conditions. Scoring is automatic and every file is in [`benchmark/`](benchmark), so anyone can re-run it.
+This benchmark measures how well Claude follows the Harvard-USM Ver 2020 style **with** the skill and **without** it. The model, prompt and references are the same in both conditions. Scoring was automatic, by a script that checks each rule.
 
 ## Results at a glance
 
@@ -13,13 +13,13 @@ Each condition was run 3 times on each set. Model: Claude Opus 5.5 (`claude-opus
 
 ## What was tested
 
-**Main set** ([`input-main.txt`](benchmark/input-main.txt)). These are real references:
+**Main set.** These are real references:
 - 12 come from the EndNote Harvard-USM output in a USM MPH research report (GKT517, 2024). They include errors EndNote produced: `doi:` prefixes, `Proceedings from Proceedings`, `(eds.)`, `pp` with no full stop, and missing pages.
 - 5 are PubMed articles in Vancouver style. They cover article numbers, a journal with no issue numbers, a supplement issue, 13 authors and 90 authors.
 
 These cases were used while the skill was being built, so the skill was tuned on them.
 
-**Held-out set** ([`input-holdout.txt`](benchmark/input-holdout.txt)). This set holds 9 references the skill was **not** built or tuned on:
+**Held-out set.** This set holds 9 references the skill was **not** built or tuned on:
 - PubMed articles, a textbook, a WHO webpage, and a book chapter.
 - One entry from the MPH report with `et al.` and a missing DOI.
 - They are given in APA 7 and Vancouver styles, which the skill had not been tested on.
@@ -30,19 +30,10 @@ This set shows how the skill handles new input.
 
 ## Method
 
-1. Both conditions get the same prompt ([`prompt.txt`](benchmark/prompt.txt)). The prompt asks for USM Harvard, says to mark missing information as `[MISSING: field]`, and sets a fixed output block so the answer can be scored.
+1. Both conditions get the same prompt. The prompt asks for USM Harvard, says to mark missing information as `[MISSING: field]`, and sets a fixed output block so the answer can be scored.
 2. **With skill:** the prompt starts with "Use the usm-harvard-citation skill" and the skill is installed.
 3. **Without skill:** skills are turned off (`--disable-slash-commands`), and no file or web tools are available. Claude relies only on what it already knows about "USM Harvard".
-4. [`score.js`](benchmark/score.js) checks each output against the rules in [`sets/main.js`](benchmark/sets/main.js) and [`sets/holdout.js`](benchmark/sets/holdout.js). Each check is one rule on one entry, for example "volume and issue in bold: **36(1)**". A check passes or fails, with no partial marks.
-5. The raw outputs of every run are in [`benchmark/results/`](benchmark/results).
-
-To re-run it:
-```
-cd benchmark
-bash run.sh main 3
-bash run.sh holdout 3
-node summary.js main holdout
-```
+4. A scoring script checks each output against a fixed list of rules. Each check is one rule on one entry, for example "volume and issue in bold: **36(1)**". A check passes or fails, with no partial marks.
 
 ## What the results show
 
@@ -73,7 +64,7 @@ node summary.js main holdout
 
 ## Full results
 
-The tables below come from `node summary.js main holdout`.
+The tables below list every check and how many of the 3 runs passed it.
 
 ### Set: main (53 checks, 3 runs each)
 
