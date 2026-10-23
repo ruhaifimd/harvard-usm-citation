@@ -41,12 +41,31 @@ In-text citation: `(Smith & Ali, 2013)`
 
 Reference list entry: `Smith, J. & Ali, B. (2013). Vaccine uptake in Kelantan. Med J Malaysia, 68(2), 45-50.`
 
+## Benchmark
+
+The same model was given the same references with and without the skill, and the outputs were scored automatically against the Harvard-USM rules. Each condition ran 3 times.
+
+| Test set | With skill | Without skill |
+|---|---|---|
+| Main set: 17 references and 6 in-text citations from a USM MPH report and PubMed, 53 checks | **100%** | 72% |
+| Held-out set: 9 new references in APA 7 and Vancouver, not used to build the skill, 30 checks | **98%** | 61% |
+
+Without the skill, Claude writes general UK Harvard instead of Harvard-USM. The skill adds the USM rules it does not know: bold volume and issue, `&` between authors, `Retrieved from:`, `(Eds.)`, `Proceedings from`, online theses, and 21+ authors. The one failure on the held-out set was a false alarm, a missing issue marked for a BMC journal. Model: Claude Opus 5.5, October 2026.
+
+Method, limits, every check, and the raw outputs are in [BENCHMARK.md](BENCHMARK.md). To re-run it, see the [`benchmark/`](benchmark) folder.
+
 ## File Structure
 
 ```
 harvard-usm-citation/
 ├── README.md
+├── BENCHMARK.md                                  # Benchmark method and results
 ├── LICENSE
+├── benchmark/
+│   ├── prompt.txt, input-main.txt, input-holdout.txt   # Test inputs
+│   ├── sets/main.js, sets/holdout.js             # Scoring rules for each check
+│   ├── run.sh, score.js, summary.js              # Run, score and summarise
+│   └── results/                                  # Raw outputs of every run and scores
 └── skill/
     └── usm-harvard-citation/
         ├── SKILL.md                              # Main skill instructions
@@ -54,6 +73,8 @@ harvard-usm-citation/
             ├── usm-formatting-rules.md           # Templates and rules for each source type
             └── examples.md                       # Worked examples, including missing-field cases
 ```
+
+Only the `skill/usm-harvard-citation` folder needs to be installed. The `benchmark` folder is for testing.
 
 ## Sources
 
