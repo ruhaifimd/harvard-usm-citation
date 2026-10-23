@@ -109,7 +109,14 @@ Use the output format below. Do not skip the checklist of missing or uncertain f
 - 2 to 20 authors: list all authors.
 - 21 or more authors: list the first 19, then `...`, then the last author. EndNote does not do this automatically.
 - Do not use `et al.` in the reference list.
-- Use hanging indent in Word. Italics for journal names, book titles, and volume numbers. Tell the user to apply italics in Word, since plain text cannot show them.
+- **Font styles (from the Harvard-USM EndNote output):**
+  - Journal name in *italics*: `*Asia Pacific Journal of Public Health*`.
+  - Volume and issue together in **bold**, not italics: `**36(1)**`. A volume with no issue is also bold: `**33**`.
+  - Pages and article numbers in plain text.
+  - Book titles in *italics*.
+  - Example: `Fadzil, S. S. & Bulgiba, A. (2024). Commuting accidents and its associated factors among public hospital nurses in Selangor, Malaysia. *Asia Pacific Journal of Public Health*, **36(1)**, 119-122. https://doi.org/10.1177/10105395231207234`
+  - When the output supports Markdown or HTML, apply these styles. In plain text, tell the user to apply them in Word.
+- Use hanging indent in Word.
 
 ---
 
@@ -142,6 +149,7 @@ Missing or uncertain: [list each one, or "None"]
 - `(Ed.)` used for two editors. Use `(Eds.)`.
 - Missing issue, pages, or DOI, left blank instead of marked in red.
 - Title case used for article titles.
+- Volume in italics (APA style) instead of volume and issue in bold (Harvard-USM).
 
 ---
 

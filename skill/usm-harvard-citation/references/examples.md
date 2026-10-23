@@ -58,6 +58,7 @@ Surname, A., Surname, B., ... (list authors 1 to 19), ..., Last Author, Z. (Year
 - Missing a, b, c for same author, same year.
 - Using `(Ed.)` for two editors: use `(Eds.)`.
 - Not italicising journal names in Word.
+- Italicising the volume (APA style). In Harvard-USM the volume and issue are **bold**, for example **36(1)**.
 
 ## Examples from a USM MPH report (EndNote Harvard-USM output, corrected)
 
