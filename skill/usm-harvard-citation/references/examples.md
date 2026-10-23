@@ -67,7 +67,7 @@ Five references checked by reading them against SKILL.md and usm-formatting-rule
 |---|---|---|---|
 | 1 | Ab Hamid et al., 2018 (9 authors) | (Ab Hamid et al., 2018) | Missing issue and DOI/URL (red). Page `90` may be an article number (check). |
 | 2 | Abdullah et al., 2023 | (Abdullah et al., 2023) | Missing pages (red). DOI in `https://doi.org/` form. |
-| 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Complete. |
+| 3 | Adams et al., 2023 (7 authors) | (Adams et al., 2023) | Pages missing (red). `61` is an article number, not a page range. Corrected after the headless Claude Code test. |
 | 4 | Adenan, 2018 (online thesis) | (Adenan, 2018) | Missing degree type (red). Institution inferred from URL (check, red). |
 | 5 | Ali et al., 2016 (4 authors) | (Ali et al., 2016) | Missing DOI/URL (red). Title `Roads traffic accidents` may need correction (check, red). |
 

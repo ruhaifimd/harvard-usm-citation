@@ -1,5 +1,6 @@
 ---
 name: usm-harvard-citation
+allowed-tools: Read
 description: Format, check, and correct in-text citations and reference lists in the USM Harvard style (Harvard-USM Ver 2020, based on APA 6th) for USM theses, dissertations, and academic writing. Use whenever the user asks to format, check, proofread, or fix a citation or reference; build a bibliography; cite a source, URL, or DOI in USM Harvard; convert references to USM Harvard; or pastes a reference list. Trigger on mentions of 'Harvard USM', 'USM Harvard', 'Harvard-USM', 'IPS', 'thesis referencing', 'reference list', 'in-text citation', 'cite this', 'bibliography', or when references are pasted for review.
 ---
 
